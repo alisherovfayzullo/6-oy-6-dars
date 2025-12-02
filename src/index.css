@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  /* colors */
+  --color-primary: #5ca5a5;
+  --color-primary-10: rgba(92, 165, 165, 0.1);
+  --color-light: #effafa;
+  --color-white: #ffffff;
+  --color-secondary: #2b3939;
+  --color-gray: #7c8f8f;
+  /* font */
+  --default-font-family: "League Spartan Variable";
+  /* shadow */
+  --shadow-card: 0 15px 20px -5px #0d718226;
+}
+@layer base {
+  body {
+    @apply bg-light text-base font-medium;
+  }
+}
+@layer utilities {
+  .container {
+    @apply w-full max-w-[1140px] mx-auto px-4;
+  }
+}
